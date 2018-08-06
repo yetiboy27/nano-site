@@ -1,0 +1,106 @@
+===Database music_collection
+
+== Table structure for table music_album
+
+|------
+|Column|Type|Null|Default
+|------
+|Album_Title|varchar(128)|No|
+|//**album_id**//|int(10)|No|
+|artist_id|int(11)|No|
+== Dumping data for table music_album
+
+|Never Mind the Bollocks|3331|2221
+|London Calling|3332|2222
+|Maggot Brain|3333|2223
+|Controversy|3334|2224
+|Crossover Ministry|3335|2225
+|Yellow and Green|3336|2226
+|The Clash|3337|2222
+|Ace of Spades|3359|2260
+|Nevermind|3358|2259
+|Woof!!!!|3357|2258
+|Born This Way|3360|2261
+|The Revealer|3361|2262
+| |3365|2266
+|In On The Kill Taker|3364|2265
+== Table structure for table music_artist
+
+|------
+|Column|Type|Null|Default
+|------
+|Band_or_Artist|varchar(128)|No|
+|//**artist_id**//|int(10)|No|
+|genre_id|int(11)|No|
+== Dumping data for table music_artist
+
+|Sex Pistols|2221|1111
+|The Clash|2222|1111
+|Funkadelic|2223|1112
+|Prince|2224|1112
+|Iron Reagan|2225|1113
+|Baroness|2226|1113
+|Jesse Dayton|2262|1129
+|Lady Gaga|2261|1128
+|Motorhead|2260|1113
+|Nirvana|2259|1127
+|Captain Jack|2258|1113
+|Fugazi|2265|1127
+== Table structure for table music_genre
+
+|------
+|Column|Type|Null|Default
+|------
+|genre|varchar(128)|No|
+|//**genre_id**//|int(10)|No|
+== Dumping data for table music_genre
+
+|punk|1111
+|funk|1112
+|metal|1113
+|country|1129
+|pop|1128
+|alternative|1127
+== Table structure for table music_song_title
+
+|------
+|Column|Type|Null|Default
+|------
+|Song_Title|varchar(128)|No|
+|//**song_id**//|int(10)|No|
+|album_id|int(11)|No|
+|artist_id|int(11)|No|
+|genre_id|int(11)|No|
+|Rating|char(5)|No|
+== Dumping data for table music_song_title
+
+|God Save the Queen|4441|3331|2221|1111|*****
+|Anarchy in the UK|4442|3331|2221|1111|*****
+|Submission|4443|3331|2221|1111|****
+|Train in Vain|4444|3332|2222|1111|***
+|Lost in the Supermarket|4445|3332|2222|1111|**
+|Super Stupid|4446|3333|2223|1112|****
+|Can You Get to That|4447|3333|2223|1112|**
+|Sexuality|4448|3334|2224|1112|*****
+|Let's Work|4449|3334|2224|1112|*
+|A Dying World|44410|3335|2225|1113|***
+|Take These Bones Away|44411|3336|2226|1113|****
+|Carrer Oportunities|44412|3337|2222|1111|****
+|Police &amp; Thieves|44413|3337|2222|1111|*****
+|Smells Like Teen Spirit|44433|3358|2259|1127| 
+|Grrrrrr|44432|3357|2258|1113| 
+|Ace of Spades|44434|3359|2260|1113| 
+|Born This Way|44435|3360|2261|1128| 
+|Holy Ghost Rock and Roller|44436|3361|2262|1129| 
+|Facet Squared|44439|3364|2265|1127| 
+== Table structure for table music_users
+
+|------
+|Column|Type|Null|Default
+|------
+|user|varchar(25)|Yes|NULL
+|pass|varchar(16)|Yes|NULL
+== Dumping data for table music_users
+
+|TimO|pass
+|jennifer|poop
